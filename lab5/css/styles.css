@@ -1,0 +1,103 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Hero Banner */
+#hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  background: #1d2159 url('https://lpnu.ua/sites/default/files/styles/hero/public/2026/10/3/news/37814/znimok-ekrana-2026-10-03-223810.png?itok=f-rkRipX') no-repeat center top;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#hero .shadow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.85) 100%);
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#hero h2 a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Синя навігаційна смуга */
+#block-lpnushortcutstop4 {
+  background-color: #272c7d;
+  width: 100%;
+}
+
+.shortcuts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.shortcut-item {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.shortcut-item:last-child {
+  border-right: none;
+}
+
+.shortcut-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.shortcut-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Налаштування кольору та розміру 24px для іконок */
+.shortcut-content svg {
+  fill: #00b0f0 !important;
+  color: #00b0f0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  flex-shrink: 0;
+  display: inline-block;
+}
