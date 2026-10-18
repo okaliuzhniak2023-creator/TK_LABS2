@@ -5,18 +5,19 @@
 }
 
 body {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
 }
 
 /* Hero Banner */
 #hero {
+  font-weight: normal;
   position: relative;
-  min-height: 380px;
+  min-height: 420px;
   display: flex;
   align-items: flex-end;
-  padding: 30px;
-  background: #1d2159 url('https://lpnu.ua/sites/default/files/styles/hero/public/2026/10/3/news/37814/znimok-ekrana-2026-10-03-223810.png?itok=f-rkRipX') no-repeat center top;
+  padding: 35px 0;
+  background: #1d2159 url('../photo/background.jpg') no-repeat center top;
   background-size: cover;
   color: #ffffff;
 }
@@ -24,7 +25,7 @@ body {
 #hero .shadow {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(180deg, rgba(1, 105, 252, 0) 25%, rgba(0, 38, 255, 0.85) 100%);
   z-index: 1;
 }
 
@@ -34,13 +35,16 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 30px;
 }
 
 #hero h2 a {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 26px;
   text-decoration: none;
   font-weight: bold;
+  line-height: 1.35;
+  display: inline-block;
 }
 
 #hero h2 a:hover {
@@ -57,14 +61,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .shortcut-item {
-  flex: 1 1 200px;
+  flex: 1 1 240px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 15px;
+  padding: 24px 15px;
   color: #ffffff;
   text-decoration: none;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -82,15 +88,17 @@ body {
 .shortcut-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  text-align: center;
+  justify-content: flex-start;
+  gap: 14px;
+  text-align: left;
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
+  width: 100%;
+  max-width: 270px;
 }
 
-/* Налаштування кольору та розміру 24px для іконок */
+/* Налаштування кольору та розміру іконок */
 .shortcut-content svg {
   fill: #00b0f0 !important;
   color: #00b0f0 !important;
@@ -100,4 +108,12 @@ body {
   max-height: 24px !important;
   flex-shrink: 0;
   display: inline-block;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .shortcut-item {
+    flex: 1 1 50%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
