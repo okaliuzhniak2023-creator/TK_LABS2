@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Лабораторна робота №7. CSS Flexbox, Grid Layout, transitions та animations. Варіант 3 — header#featured_container.">
+    <title>Lab7 — CSS Flexbox, Grid Layout, transitions та animations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         header#featured_container скопійований з https://lpnu.ua/
+         Варіант 3. Для розташування карток використано Flexbox.
+         ============================================================ -->
+    <header id="featured_container" aria-label="Featured News and Announcements">
+        <div class="container">
+            <div class="featured-flex">
+
+                <article class="featured-card">
+                    <a class="featured-card__link"
+                        href="https://lpnu.ua/news/zvit-rektora-pro-osnovni-dosiahnennia-lvivskoi-politekhniky-u-2025-rotsi-na-konferentsii">
+                        <img src="images/featured-rector-report.jpg" width="720" height="360"
+                            alt="Фасад головного корпусу Львівської політехніки">
+                        <div class="shadow_featured"></div>
+                        <h2><span>Звіт ректора про основні досягнення Львівської політехніки у 2025 році на Конференції
+                                трудового колективу Університету</span></h2>
+                    </a>
+                </article>
+
+                <article class="featured-card">
+                    <a class="featured-card__link"
+                        href="https://lpnu.ua/news/instytuty-dosiahnennia-plany-motyvatsiia-tematychnyi-nomer-zhurnalu-lvivska-politekhnika">
+                        <img src="images/featured-institutes.jpg" width="720" height="360"
+                            alt="Заставка до матеріалу">
+                        <div class="shadow_featured"></div>
+                        <h2><span>Інститути – досягнення, плани, мотивація: тематичний номер журналу «Львівська
+                                політехніка»</span></h2>
+                    </a>
+                </article>
+
+                <article class="featured-card">
+                    <a class="featured-card__link" href="https://lpnu.ua/news/politekhnika-ekskursiina">
+                        <img src="images/featured-excursion.jpg" width="720" height="360"
+                            alt="Політехніка екскурсійна">
+                        <div class="shadow_featured"></div>
+                        <h2><span>Політехніка екскурсійна</span></h2>
+                    </a>
+                </article>
+
+                <article class="featured-card">
+                    <a class="featured-card__link"
+                        href="https://lpnu.ua/news/lvivska-politekhnika-u-reitynhakh-zakladiv-vyshchoi-osvity">
+                        <img src="images/featured-rankings.jpg" width="720" height="360"
+                            alt="Фронтон головного корпусу Львівської політехніки">
+                        <div class="shadow_featured"></div>
+                        <h2><span>Львівська політехніка у рейтингах закладів вищої освіти</span></h2>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         main -> div.main-container -> блок «Новини університету»
+         Сітку новин реалізовано через CSS Grid Layout.
+         ============================================================ -->
+    <main class="main-container">
+        <div class="container">
+
+            <section class="news-section" aria-labelledby="news-title">
+                <h2 class="news-section__title" id="news-title">
+                    <a href="https://lpnu.ua/news">Новини університету</a>
+                </h2>
+
+                <div class="news-grid">
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/lvivska-politekhnika-otrymala-dvi-podiaky-ministerstva-osvity-i-nauky-ukrainy-za-liderstvo-v">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-1.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 16:25</span>
+                            </div>
+                            <h3>Львівська політехніка отримала дві подяки Міністерства освіти і науки України за
+                                лідерство в науковій діяльності</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/16-molodykh-naukovtsiv-lvivskoi-politekhniky-staly-stypendiatamy-kabinetu-ministriv-ukrainy">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-2.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 15:46</span>
+                            </div>
+                            <h3>16 молодих науковців Львівської політехніки стали стипендіатами Кабінету Міністрів
+                                України</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/prorektor-ihor-helzhynskyi-predstavyv-dosvid-lvivskoi-politekhniky-na-forumi-dostupnosti">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-3.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 15:10</span>
+                            </div>
+                            <h3>Проректор Ігор Гельжинський представив досвід Львівської політехніки на Форумі
+                                доступності</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/studenty-iesk-ikni-ta-imit-navchaiutsia-u-hannoverskomu-universyteti-v-mezhakh-proiektu-merit">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-4.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 14:33</span>
+                            </div>
+                            <h3>Студенти ІЕСК, ІКНІ та ІМІТ навчаються у Ганноверському університеті в межах проєкту
+                                MERIT-Ukraine</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/hotuvatysia-do-nmt-razom-iz-lvivskoiu-politekhnikoiu-mozhna-ochno-i-dystantsiino">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-5.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 13:55</span>
+                            </div>
+                            <h3>Готуватися до НМТ разом із Львівською політехнікою можна очно і дистанційно</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/tech-startup-school-pryiednalasia-do-realizatsii-proiektu-bridge-bridge-innovate-connecting">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-6.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 13:30</span>
+                            </div>
+                            <h3>Tech StartUp School приєдналася до реалізації проєкту BRIDGE: Bridge to Innovate —
+                                Connecting STEM talent to entrepreneurial pathways</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/proiektnyi-ofis-zaproshuie-na-praktykum-poshuk-partneriv-i-formuvannia-konsortsiumu-v">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-7.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 13:15</span>
+                            </div>
+                            <h3>Проєктний офіс запрошує на практикум «Пошук партнерів і формування консорціуму в
+                                міжнародних проєктах»</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/vosmero-naukovtsiv-lvivskoi-politekhniky-staly-laureatamy-konkursu-molodyi-vchenyi-roku-2026">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-8.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 12:55</span>
+                            </div>
+                            <h3>Восьмеро науковців Львівської політехніки стали лауреатами конкурсу «Молодий вчений
+                                року – 2026»</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/rektorka-lvivskoi-politekhniky-nataliia-shakhovska-zustrilasia-z-prezydentom-tsiurykhskoho">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-9.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 12:21</span>
+                            </div>
+                            <h3>Ректорка Львівської політехніки Наталія Шаховська зустрілася з президентом
+                                Цюрихського університету Міхаелем Шепманом</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/pravosuddia-v-chasy-zmin-suddia-verkhovnoho-sudu-nataliia-blazhivska-prochytala-lektsiiu-dlia">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-10.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 12:03</span>
+                            </div>
+                            <h3>«Правосуддя в часи змін»: суддя Верховного Суду Наталія Блажівська прочитала лекцію
+                                для студентів ІППО</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/lvivska-politekhnika-ta-mykolaivskyi-natsionalnyi-ahrarnyi-universytet-rozvyvatymut-spilni">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-11.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 11:15</span>
+                            </div>
+                            <h3>Львівська політехніка та Миколаївський національний аграрний університет
+                                розвиватимуть спільні освітні й наукові проєкти</h3>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="https://lpnu.ua/news/u-lvivskii-politekhnitsi-vidbuvsia-pershyi-etap-movnykh-konkursiv-imeni-tarasa-shevchenka-ta">
+                            <div class="news_teaser">
+                                <img class="img-responsive" src="images/news-12.jpg" width="720" height="405"
+                                    alt="Заставка до матеріалу">
+                                <span>13 листоп. 2026, 10:08</span>
+                            </div>
+                            <h3>У Львівській політехніці відбувся перший етап мовних конкурсів імені Тараса Шевченка
+                                та Петра Яцика</h3>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Лабораторна робота №7. Варіант 3 — <code>header#featured_container</code>. Фрагмент головної сторінки
+                <a href="https://lpnu.ua/">Львівської політехніки</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
