@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Trivia — daily quizzes, categories, leaderboard and a Puzzle of the Day for curious minds.">
+    <title>World Trivia — Play, Learn, Discover</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- 3.2 Шапка сайту з навігаційним меню -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="World Trivia — go to Home">
+                <span class="brand-icon" aria-hidden="true">?</span>
+                <span class="brand-text">World <strong>Trivia</strong></span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trivia">Trivia</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#scores">Scores</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- 3.5 Home -->
+        <section id="home" class="section home" aria-labelledby="home-title">
+            <div class="container home-inner">
+                <div class="home-copy">
+                    <p class="eyebrow">Daily quizzes for curious minds</p>
+                    <h1 id="home-title">Discover the world, one question at a time</h1>
+                    <p class="lead">
+                        World Trivia is a place where knowledge becomes a game. Take short quizzes,
+                        explore new topics, compare your results with other players and learn
+                        something interesting every single day.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#trivia">Start playing</a>
+                        <a class="button button-outline" href="#subscribe">Get the daily puzzle</a>
+                    </div>
+                </div>
+
+                <aside class="home-card" aria-label="World Trivia in numbers">
+                    <h2 class="home-card-title">World Trivia in numbers</h2>
+                    <ul class="fact-list">
+                        <li><strong>1 200+</strong> questions in the bank</li>
+                        <li><strong>6</strong> topic categories</li>
+                        <li><strong>Every day</strong> a new puzzle</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 3.6 Trivia -->
+        <section id="trivia" class="section trivia" aria-labelledby="trivia-title">
+            <div class="container">
+                <h2 id="trivia-title">Trivia</h2>
+                <p class="section-intro">
+                    Choose a format and see how much you know. Every quiz is short, clear and
+                    designed for both quick breaks and serious competition.
+                </p>
+
+                <div class="trivia-items">
+                    <article class="trivia-card">
+                        <img src="assets/quiz.svg" alt="Stack of trivia cards with a question mark" width="150" height="150">
+                        <div class="trivia-card-text">
+                            <h3>Quick quiz</h3>
+                            <p>Ten questions, two minutes and one chance to beat your personal best.</p>
+                        </div>
+                    </article>
+
+                    <article class="trivia-card">
+                        <img src="assets/globe.svg" alt="Illustration of a globe with continents" width="150" height="150">
+                        <div class="trivia-card-text">
+                            <h3>Around the world</h3>
+                            <p>Travel through capitals, flags and landmarks without leaving your desk.</p>
+                        </div>
+                    </article>
+
+                    <article class="trivia-card">
+                        <img src="assets/trophy.svg" alt="Golden trophy cup with a star" width="150" height="150">
+                        <div class="trivia-card-text">
+                            <h3>Weekly challenge</h3>
+                            <p>Collect points during the week and enter the top-ten leaderboard.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.7 Categories -->
+        <section id="categories" class="section categories" aria-labelledby="categories-title">
+            <div class="container">
+                <h2 id="categories-title">Categories</h2>
+                <p class="section-intro">Pick the topic you like most and start with a question you enjoy.</p>
+                <ul class="category-list">
+                    <li><a href="#trivia">Geography</a></li>
+                    <li><a href="#trivia">History</a></li>
+                    <li><a href="#trivia">Science &amp; Nature</a></li>
+                    <li><a href="#trivia">Art &amp; Literature</a></li>
+                    <li><a href="#trivia">Sport</a></li>
+                    <li><a href="#trivia">Movies &amp; Music</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3.8 Scores -->
+        <section id="scores" class="section scores" aria-labelledby="scores-title">
+            <div class="container">
+                <h2 id="scores-title">Scores</h2>
+                <p class="section-intro">The best players of the 2025 season. Play regularly to see your name here.</p>
+
+                <div class="table-wrapper" role="region" aria-label="World Trivia leaderboard" tabindex="0">
+                    <table class="scores-table">
+                        <caption class="sr-only">Top players of the 2025 World Trivia season</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Country</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Olena K.</td>
+                                <td>985</td>
+                                <td>Ukraine</td>
+                                <td>Geography</td>
+                                <td>12 May 2025</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Marko P.</td>
+                                <td>970</td>
+                                <td>Poland</td>
+                                <td>History</td>
+                                <td>18 June 2025</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Zoe M.</td>
+                                <td>954</td>
+                                <td>Canada</td>
+                                <td>Science &amp; Nature</td>
+                                <td>2 July 2025</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Andrii S.</td>
+                                <td>940</td>
+                                <td>Ukraine</td>
+                                <td>Sport</td>
+                                <td>25 July 2025</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Lina T.</td>
+                                <td>921</td>
+                                <td>Lithuania</td>
+                                <td>Art &amp; Literature</td>
+                                <td>9 August 2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.10 Subscribe -->
+        <section id="subscribe" class="section subscribe" aria-labelledby="subscribe-title">
+            <div class="container subscribe-inner">
+                <div class="subscribe-copy">
+                    <p class="eyebrow">Never miss a puzzle</p>
+                    <h2 id="subscribe-title">Puzzle of the Day</h2>
+                    <p>
+                        One fresh riddle in your inbox every morning. Subscribe and keep your
+                        mind sharp with a tiny daily challenge.
+                    </p>
+                </div>
+                <button class="pulse-button" type="button" aria-label="Subscribe now to Puzzle of the Day">
+                    Subscribe now
+                </button>
+            </div>
+        </section>
+
+        <!-- 3.9 Contact -->
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <div class="contact-info">
+                    <h2 id="contact-title">Contact</h2>
+                    <p>
+                        Found a mistake in a question or have an idea for a new category?
+                        Write to us — we read every message.
+                    </p>
+                    <address>
+                        World Trivia team<br>
+                        Lviv, Ukraine<br>
+                        <a href="mailto:hello@worldtrivia.example">hello@worldtrivia.example</a>
+                    </address>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-field">
+                        <label for="contact-name">Your name</label>
+                        <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Ivan Ivanenko" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="ivan@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" placeholder="Tell us what you think..." required></textarea>
+                    </div>
+                    <button class="button button-primary" type="submit" aria-label="Send message to the World Trivia team">
+                        Send message
+                    </button>
+                    <p class="form-hint">
+                        <span class="sr-only">All fields are required. </span>
+                        We usually reply within two working days.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 World Trivia. All rights reserved.</p>
+            <nav aria-label="Footer navigation">
+                <a href="#home">Back to top</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

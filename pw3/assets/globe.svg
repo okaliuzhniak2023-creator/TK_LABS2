@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <title>Globe</title>
+  <rect width="150" height="150" rx="12" fill="#e8f0fb"/>
+  <circle cx="75" cy="75" r="54" fill="#ffffff" stroke="#0654b3" stroke-width="4"/>
+  <path d="M21 75h108" stroke="#0654b3" stroke-width="2"/>
+  <ellipse cx="75" cy="75" rx="24" ry="54" fill="none" stroke="#0654b3" stroke-width="2"/>
+  <path d="M30 49h90M30 101h90" stroke="#0654b3" stroke-width="2"/>
+  <path d="M50 44c9-8 22-7 28 1 5 6-1 13-9 15-9 2-19-5-19-16z" fill="#7fc4ff"/>
+  <path d="M82 63c10-5 20 1 21 11 1 9-9 16-18 12-8-3-11-19-3-23z" fill="#ffd166"/>
+  <path d="M48 88c7-4 16 0 17 8 1 9-9 17-16 12-6-5-7-16-1-20z" fill="#88d499"/>
+</svg>

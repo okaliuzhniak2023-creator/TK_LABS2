@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <title>Quiz cards</title>
+  <rect width="150" height="150" rx="12" fill="#e8f0fb"/>
+  <rect x="24" y="32" width="78" height="88" rx="8" fill="#b9d4f5" transform="rotate(-8 63 76)"/>
+  <rect x="46" y="24" width="84" height="96" rx="8" fill="#ffffff" stroke="#0654b3" stroke-width="3"/>
+  <circle cx="70" cy="48" r="5" fill="#ffd166"/>
+  <text x="88" y="96" fill="#0654b3" font-family="Arial, sans-serif" font-size="58" font-weight="bold" text-anchor="middle">?</text>
+</svg>
